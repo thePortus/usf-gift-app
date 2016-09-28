@@ -1,0 +1,45 @@
+{
+  "name": "usf-gift",
+  "private": true,
+  "description": "",
+  "version": "0.0.1",
+  "author": "",
+  "engines": {
+    "node": "^4.5.x",
+    "npm": "^3.10.x"
+  },
+  "scripts": {
+    "start": "grunt serve",
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-django": "^0.3.0",
+    "grunt-sass": "^1.2.1",
+    "autoprefixer": "^6.4.1",
+    "cssnano": "^3.7.5",
+    "grunt-angular-templates": "^1.1.0",
+    "grunt-djangularjs-translate": "^1.0.0",
+    "grunt-concurrent": "^2.3.1",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ng-annotate": "^2.0.2",
+    "grunt-postcss": "^0.8.0",
+    "jit-grunt": "^0.10.0",
+    "pixrem": "^3.0.2",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "devDependencies": {
+    "karma": "^1.3.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-ng-html2js-preprocessor": "^1.0.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "phantomjs-prebuilt": "^2.1.12",
+    "jasmine": "^2.5.2",
+    "jasmine-core": "^2.5.2",
+    "grunt-karma": "^2.0.0"
+  }
+}

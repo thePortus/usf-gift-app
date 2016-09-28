@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<div class="core feature-category-template" layout-padding>
+    <md-toolbar class="md-toolbar-tools md-accent md-hue-1 title-font" layout-align="center center">
+        <span ng-bind="vm.category"></span>
+    </md-toolbar>
+    <md-list class="md-dense" flex>
+        <md-list-item class="md-2-line" ng-repeat="feature in vm.features | filter:{category: vm.category}" ng-click="null" ng-href="{{ feature.link }}" target="_" aria-label="{{feature.aria}}">
+            <img ng-if="feature.img" class="md-avatar" ng-src="{{ feature.img | staticPath }}">
+            <div class="md-list-item-text" layout="column">
+                <h3 class="title-font" ng-bind="feature.name" target="_blank"></h3>
+                <p ng-bind-html="feature.descriptionKey | translate | safe"></p>
+            </div>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-list-item>
+    </md-list>
+</div>

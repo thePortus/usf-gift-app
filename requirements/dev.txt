@@ -1,0 +1,4 @@
+-r production.txt
+memory-profiler==0.41
+django-nose==1.4.4
+Sphinx==1.4.6

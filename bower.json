@@ -1,0 +1,40 @@
+{
+  "name": "usf-gift",
+  "private": true,
+  "version": "0.0.1",
+  "description": "",
+  "dependencies": {
+    "object-assign": "^4.1.0",
+    "moment": "^2.14.1",
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-cookies": "^1.5.8",
+    "angular-loading-bar": "^0.9.0",
+    "angular-messages": "^1.5.8",
+    "angular-moment": "^0.10.3",
+    "angular-resource": "^1.5.8",
+    "angular-sanitize": "^1.5.8",
+    "angular-toolbox": "^1.7.0",
+    "angular-touch": "^1.5.8",
+    "angular-translate": "^2.12.0",
+    "angular-ui-router": "^0.3.1",
+    "angular-ui-router-title": "^0.0.4",
+    "restangular": "^1.5.2",
+    "angular-translate-interpolation-messageformat": "^2.12.0",
+    "angular-material": "^1.1.1",
+    "typopro-web": "^3.4.9",
+    "material-design-icons-iconfont": "^3.0.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.5.8"
+  },
+  "resolutions": {
+    "moment": "^2.14.1",
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-messages": "^1.5.8",
+    "angular-translate": "^2.12.0"
+  }
+}

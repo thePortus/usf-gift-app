@@ -1,0 +1,15 @@
+/*Optional: override bootstrap defaults here */
+$screen-sm: 400px;
+$screen-md: 700px;
+$screen-lg: 1000px;
+
+$grid-gutter-width: 20px; // default is 30px
+$container-margin: 40px;
+// Small screen / tablet ** For `$screen-sm-min` and up.
+$container-tablet: auto;
+// Medium screen / desktop ** For `$screen-md-min` and up.
+$container-desktop: auto;
+// Large screen / wide desktop  ** For `$screen-lg-min` and up.
+$container-large-desktop: 1000px;
+
+@import "core/styles/core.style";

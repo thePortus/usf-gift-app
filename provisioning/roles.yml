@@ -1,0 +1,29 @@
+---
+- hosts: all
+  roles:
+    - role: common
+      become: yes
+
+- hosts: web_app
+  roles:
+    - role: dev-tools
+      become: yes
+    - role: web-app-conf
+      become: yes
+
+- hosts: redis
+  roles:
+    - role: angstwad.docker_ubuntu
+      become: yes
+  tasks:
+    - name: redis container
+      become: yes
+      docker:
+        name: redis-service
+        image: redis:3
+        command: redis-server
+        state: started
+        expose: 6379
+        ports:
+         - "{{ REDIS.PORT }}:6379" # see group_vars/all
+        docker_api_version: 1.18

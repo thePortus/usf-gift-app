@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<div class="core auth-sign-in-template" ng-switch="vm.auth.isUserLoggedIn()">
+    <!-- if signed in -->
+    <div ng-switch-when="true">
+        <md-button href="/accounts/logout/" aria-label="{{'SIGN_OUT_ACTION'|translate}}" layout="row" layout-align="center center" layout-padding>
+            <span ng-bind="vm.user.username"></span>
+            <span ng-bind="'SIGN_OUT_ACTION'|translate"></span>
+            <i class="material-icons">exit_to_app</i>
+        </md-button>
+    </div>
+    <!-- /if signed in -->
+    <!-- if not signed in -->
+    <div ng-switch-when="false">
+        <md-button href="/accounts/google/login/" aria-label="{{'SIGN_IN_ACTION'|translate}}" layout="row" layout-align="center center" layout-padding>
+            <span ng-bind="'SIGN_IN_ACTION'|translate"></span>
+            <i class="material-icons">account_box</i>
+        </md-button>
+    </div>
+</div>

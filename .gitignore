@@ -1,0 +1,36 @@
+.DS_Store
+.git
+.nodemonignore
+.sass-cache/
+npm-debug.log
+pip-selfcheck.json
+
+# npm & bower modules
+node_modules/
+public/_
+static
+dist
+
+.bower-*/
+.idea/
+.vagrant/
+
+# virtualenv
+bin/
+build/
+include/
+lib/
+man/
+local/
+tmp/
+
+*.pyc
+*.sqlite3
+*.log
+*.log.*
+.coverage
+
+roles.retry
+public/i18n/*.js
+server/settings/*.yml 
+share/

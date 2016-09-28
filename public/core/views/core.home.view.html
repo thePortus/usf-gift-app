@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<section>
+    <div layout-padding>
+        <div>
+            <md-card md-theme="default-dark" class="default-dark" layout-margin>
+                <div layout-padding>
+                    <div class="text-center">
+                        <h2 class="title-font title-main" translate="PROJECT_NAME"></h2>
+                        <p ng-bind-html="'PROJECT_DESCRIPTION' | translate | safe"></p>
+                    </div>
+                    <div layout="column" layout-align="center center">
+                        <p ng-bind-html="'PROJECT_SPONSORS' | translate | safe"></p>
+                        <p ng-bind-html="'PROJECT_CREDITS' | translate | safe"></p>
+                    </div>
+                </div>
+            </md-card>
+            <!-- hide/show features -->
+            <div layout="column">
+                <md-button class="md-raised md-primary md-hue-3" ng-click="vm.show_features=!vm.show_features" aria-label="Show/Hide Stack Features">
+                    <div ng-if="!vm.show_features" ng-bind="'SHOW_FEATURES_ACTION'|translate"></div>
+                    <div ng-if="vm.show_features" ng-bind="'HIDE_FEATURES_ACTION'|translate"></div>
+                </md-button>
+                <!-- /hide/show features -->
+            </div>
+        </div>
+    </div>
+    <md-divider></md-divider>
+    <!-- features -->
+    <div ng-show="vm.show_features" ng-init="categories=(vm.features | pluck:'category' | uniq)" layout-padding>
+        <div>
+            <div layout="column" layout-gt-sm="row">
+                <md-card ng-repeat="category in categories" flex>
+                    <feature-category category="category" features="vm.features"></feature-category>
+                </md-card>
+            </div>
+        </div>
+    </div>
+    <!-- /features -->
+</section>
